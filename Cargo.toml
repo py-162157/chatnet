@@ -6,5 +6,14 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "server"
+path = "src/bins/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/bins/client_side.rs"
+
 [dependencies]
-tokio = { version = "1.2.0", features = ["full"] }
+tokio = { version = "1.6.1", features = ["full"] }
+tokio-util = { version = "0.6.7", features = ["full"] }
